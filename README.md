@@ -33,6 +33,11 @@ The buildpack will detect your app as nginx if it has the file
 directives as `listen <%= ENV['PORT'] %>;` and also include `daemon off;` in
 order for this buildpack to work correctly.
 
+As an alternative to the above instructions you may wish to investigate
+[heroku-buildpack-multi](https://github.com/ddollar/heroku-buildpack-multi)
+in order to support more complex use-cases such as compiling a static site
+that is served by nginx or placing nginx in front of app server processes.
+
 Hacking
 -------
 
