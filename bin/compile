@@ -10,8 +10,8 @@ NGINX_VERSION="1.7.8"
 BUILD_DIR=$1
 CACHE_DIR=$2
 
-# s3 packages
-NGINX_PACKAGE="http://nginx.org/download/nginx-${NGINX_VERSION}.tgz"
+# nginx packages
+NGINX_PACKAGE="http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz"
 
 # vendor directories
 VENDORED_NGINX=$(mktemp -d -t nginx.XXXXXX)
